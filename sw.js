@@ -18,6 +18,7 @@ self.addEventListener('fetch', (e) => {
   // if (isOn) {
     if (e.request.url.indexOf('.jpg') >= 0) {
       const url = `https://res.cloudinary.com/picturecloud7/image/fetch/f_${f}/q_${q}/e_blur:${blur}/${e.request.url}`
+      console.log(url)
       e.respondWith(
         fetch(url)
       )
