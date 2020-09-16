@@ -9,7 +9,7 @@ const f = params.get('f') || 'auto';
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
-    navigator.serviceWorker.register('/sw.js');
+    navigator.serviceWorker.register('./sw.js');
   });
 }
 
